@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Assignment Brief</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+
+<ul id="myNav">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Project Description</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">Personal Evaluation</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">Project Plan</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>Hello!</h1>
+			<h3>This a brief page for Web Development Assignment</h3>
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<h2>Prototype</h2>
+			<p>
+				This Web Application project will be on the sharing of easy cooking and delightful recipes. All the recipes that is posted in this website will be automatically shared or updated on social media website page that we created such as Facebook and Twitter. Interestingly, users will be able to view and give comments or feedbacks on our recipe posts at our web application and social media.
+			</p>
+		</div>
+		<div class="intro">
+			<h2>User Stories</h2>
+			<ul class = "userStoryList">
+				<li>
+					A website admin should be able to post new recipes to the website everyday. That will automatically be posted to my websites social media pages &#40; such as Facebook and Twitter &#41;
+				</li>
+				<li>
+					A user should be able to view all the recipes posted on the website front page.
+				</li>
+				<li>
+					A user should be to add comments or like the Recipes on the websites
+				</li>
+				<li>
+					The recipes should include status such as number of likes and comments received from different social networks about the recipe the admin posted.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="slide" id="slide1">
+			<div class="intro">
+				<h2>Personal Evaluation</h2>
+				<p>Shirlyn Ai Tee Lee</p>
+				<p>satl1g14</p>
+				<img src="img/shirlyn.jpg" alt="Shirlyn" id="shirlyn" />
+				<p>
+					The table above examines the levels of my personal skills towards web development. Overall, it is evident that I am a freshie in web development. However, I am keen to acquire on declarative validation of user input and object relational mapping tools to simplify database coding. Apart from that, I will be responsible more on back-end coding implementation which will involved in the skills that I would like to study.
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<div class="intro">
+				<h2>Personal Evaluation</h2>
+				<p>Zhenfeng Wu</p>
+				<p>zfw2g10</p>
+				<img src="img/danny.jpg" alt="Danny" id="Danny" />
+				<p>
+					The table above shows my web development skills where my skills are mostly in the level of 'None' and 'Beginner'. I would like to learn more about the web development and that is the reason I chose it! Maybe I am not a good programmer but I do like designing, especially on user interface. Therefore for this project I would like to improve the skill of 'Creating a responsive user interface with HTML5, CSS3 & JavaScript', which is the first option shown in the table.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h2>Work Division</h2>
+			<p style="text-align: left">
+				This project is developed by a team of two members. The project will be divided into two major parts which are the back-end and front-end concepts. Based on the discussion, we agreed to divide our responsibilities significantly into two main tasks. 
+			</p>
+			<p style="text-align: left">
+				In conclusion, Zhenfeng will be working more on front-end Graphical User Interface Design whereas Shirlyn will be working more on back-end coding implementation.
+			</p>
+			<p style="text-align: left">
+				However, for further extend of our development on the project, we will coorperate and implicit our responsibilities without clear define line as the completion of the project is ambiguous.
+			</p>
+		</div>
+		<div class="intro">
+			<h2>Techniques &amp; Resources</h2>
+			<p style="text-align: left">
+				The following are the techniques &amp; resources that we will be using according to our plan; more may be needed during the development:
+			</p>
+			<ul class="list">
+				<li>HTML5, CSS, Javascript, JQuery &amp; AJAX</li>
+				<li>Frameworks such as: Bootstrap &amp; Blueimp Gallery</li>
+				<li>Platforms: ASP.NET &amp; SQL</li>
+				<li>Other resources: Gantt Chart, GitHub, MVC pattern &amp; Notepad++</li>
+			</ul>
+		</div>
+		<div class="intro">
+			<h2>Gantt Chart</h2>
+			<img src="img/ganttChart.jpg" alt="Gantt Chart" id="GanttChart" />
+		</div>
+	</div>
+</div>
+
+<div class = "footer">
+	<div>
+		Copyright &copy; Zhenfeng Wu &amp; Shirlyn Ai Tee Lee 2014. All Rights Reserved  
+	</div>
+	<article id="date"></article>
+	<script type="text/javascript">
+		var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+		var today = new Date();
+		today.setTime(today.getTime());       
+		document.getElementById("date").innerHTML =months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
+	</script>
+</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				menu: '#myNav',
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+				scrollOverflow: true,
+				css3: true
+			});
+		});
+	</script>
+
+</body>
+</html>
